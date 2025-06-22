@@ -1,0 +1,127 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+.app-container {
+  text-align: center;
+  padding: 30px 0;
+}
+
+/* Quiz */
+.quiz-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Question */
+.question-text {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #2d3436;
+}
+
+/* Options */
+.options-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* background-color: blue; */
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding: 10px 14px;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.option-label:hover {
+  background-color: #e6e6e6;
+}
+
+.option-label input[type="radio"] {
+  margin-right: 12px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.option-prefix {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #2d3436;
+}
+
+.option-selected {
+  background-color: #dfe6e9;
+  font-weight: 500;
+}
+
+/* Button */
+.next-button {
+  margin-top: 20px;
+  padding: 10px 16px;
+  background-color: #0984e3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+  background-color: #74b9ff;
+}
+
+.next-button:disabled {
+  background-color: #b2bec3;
+  cursor: not-allowed;
+}
+
+/* Score */
+.score-box {
+  text-align: center;
+  padding: 40px 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.score-text {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-top: 10px;
+}
+
+.try-again-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.try-again-button:hover {
+  background-color: #2ecc71;
+}
